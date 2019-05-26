@@ -1,0 +1,17 @@
+
+  #restaurants-list li {
+    background-color: rgb(228, 236, 208);
+    padding: 0 6% 25px;
+    width:32%;
+
+  }
+  #restaurants-list .restaurant-img {
+   
+    min-height: 0px;
+ 
+  }
+
+  #restaurants-list {
+display: flex;
+flex-wrap: wrap;
+}
