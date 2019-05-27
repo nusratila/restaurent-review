@@ -165,15 +165,13 @@ createRestaurantHTML = (restaurant) => {
   image.alt = "Image of " + restaurant.name;
   li.append(image);
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
-  name.tabIndex = 0;
   
   li.append(name);
 
   const neighborhood = document.createElement('p');
   neighborhood.innerHTML = restaurant.neighborhood;
-  neighborhood.tabIndex = 0 ;
   li.append(neighborhood);
 
   const address = document.createElement('p');
@@ -214,6 +212,9 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 } */
 
+/**
+ *  registering service worker
+ */
 registerServiceWorker = () => {
   if (!navigator.serviceWorker) return;
 
